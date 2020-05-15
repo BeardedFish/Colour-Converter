@@ -21,7 +21,10 @@
     <ClCompile Include="Colour.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="programfns.cpp">
+    <ClCompile Include="Hex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandFns.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +32,10 @@
     <ClInclude Include="Colour.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="programfns.hpp">
+    <ClInclude Include="Hex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandFns.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

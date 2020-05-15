@@ -7,6 +7,8 @@
 
 #pragma once
 
+#include <string>
+
 class Colour
 {
 public:
@@ -14,6 +16,20 @@ public:
 	unsigned Green;
 	unsigned Blue;
 
+	// Constructors
 	Colour();
 	Colour(unsigned r, unsigned g, unsigned b);
+	Colour(std::string r, std::string g, std::string b);
+	
+	/*
+	 * Function Name: ToRgb()
+	 * Brief:
+	 * Parameters:
+	 * Return:
+	 */
+	std::string ToHex();
+
+private:
+	bool isValidRgb(std::string r, std::string g, std::string b);
+	std::string numberToHex(unsigned num);
 };

@@ -7,8 +7,9 @@
 \          combo to its hex string equivalent.
 */
 
+#include "CommandFns.hpp"
+#include "Hex.hpp" // NOTE: Colour.hpp is also included with Hex.hpp
 #include <iostream>
-#include "programfns.hpp"
 
 /*
 \fn:        main()
@@ -42,17 +43,20 @@ int main(int argc, char* argv[])
 		}
 		else // Convert hex to RGB
 		{
-			cleanupHexString(secondArgument);
+			Hex::CleanupHexString(secondArgument);
 
-			if (!isValidHex(secondArgument))
+			try
 			{
-				std::cerr << "ERROR: Hex is invalid!" << std::endl;
+
+				Colour rgbResult = Hex(secondArgument).ToRgb();
+				std::cout << "The hex value #" << secondArgument << " equivalent RGB value is: " << rgbResult.Red << " " << rgbResult.Green << " " << rgbResult.Blue << "." << std::endl;
+			}
+			catch (const std::exception& ex)
+			{
+				std::cerr << "ERROR: " << ex.what() << std::endl;
 
 				return EXIT_FAILURE;
 			}
-
-			Colour rgbResult = convertHexToRgb(secondArgument);
-			std::cout << "The hex value #" << secondArgument << " equivalent RGB value is: " << rgbResult.Red << " " << rgbResult.Green << " " << rgbResult.Blue << "." << std::endl;
 		}
 	}
 	else if (argc == 4) // Convert RGB to hex
@@ -61,22 +65,23 @@ int main(int argc, char* argv[])
 		std::string green = argv[2];
 		std::string blue = argv[3];
 
-		is_valid_rgb_result_t result = isValidRgb(red, green, blue);
-
-		if (!result.isValidRgb)
+		try
 		{
-			std::cerr << "ERROR: RGB is invalid!" << std::endl;
+			Colour rgb(red, green, blue);
+
+			std::cout << "The RGB(" << red << ", " << green << ", " << blue << ")" << " hex value is #" << rgb.ToHex() << std::endl;
+		}
+		catch (const std::exception& ex)
+		{
+			std::cerr << "ERROR: " << ex.what() << std::endl;
 
 			return EXIT_FAILURE;
 		}
-
-		std::string hexResult = convertRgbToHex(result.rgbColour);
-		std::cout << "The RGB(" << red << ", " << green << ", " << blue << ")" <<  " hex value is #" << hexResult << std::endl;
 	}
 	else
 	{
 		std::cout << "Invalid amount of parameters entered!" << std::endl << std::endl;
 
-		printUsageText(std::cerr, argv[0]);
+		printUsageText(std::cerr, (argc == 0) ? "ColourConverter" : argv[0]);
 	}
 }

@@ -8,18 +8,17 @@
 #pragma once
 
 #include  <string>
-#include "Colour.hpp"
 
 constexpr char PROGRAM_CREATOR[] = "Darian Benam";
 constexpr char PROGRAM_VERSION[] = "1.0";
 
-struct is_valid_rgb_result_t
+/*struct is_valid_rgb_result_t
 {
 	bool isValidRgb;
 	Colour rgbColour;
 
 	is_valid_rgb_result_t();
-};
+};*/
 
 /* --- BEGIN FUNCTION DECLARATIONS --- */
 
@@ -55,7 +54,7 @@ void handleCommand(const std::string& cmd);
 \param:     hex - The string to be checked if it's a valid hex or not.
 \return:    A boolean of value true if it's a valid hex, else false.
 */
-bool isValidHex(const std::string& hex);
+//bool isValidHex(const std::string& hex);
 
 /*
 \fn:        cleanupHexString()
@@ -63,31 +62,39 @@ bool isValidHex(const std::string& hex);
 \param:     hex - The hex string to be cleaned up.
 \return:    Nothing.
 */
-void cleanupHexString(std::string& hex);
+//void cleanupHexString(std::string& hex);
 
 /*
-\fn:        hexToDecimal()
+\fn:        numberToHex()
+\brief:     
+\param:     hex - The char that contains the hexadecimal value.
+\return:
+*/
+//std::string numberToHex(unsigned num);
+
+/*
+\fn:        hexToNumber()
 \brief:     Converts a hexadecimal character to its number value.
 \param:     hex - The char that contains the hexadecimal value.
 \return:    
 */
-unsigned hexToDecimal(char hex);
+//unsigned hexToNumber(char hex);
 
 /*
-\fn:        hexToDecimal()
+\fn:        hexToNumber()
 \brief:     Converts a hexadecimal string to its number value.
 \param:     hex - 
 \return:    Nothing.
 */
-unsigned hexToDecimal(std::string hex);
+//unsigned hexToNumber(const std::string& hex);
 
 /*
 \fn:        convertHexToRgb()
-\brief:
-\param:
-\return:    Nothing.
+\brief:     Converts a hex colour string to its RGB colour equivalent.
+\param:     hex - The hex string to be converted to a RGB colour.
+\return:    A 'Colour' class which contains the RGB values of the hex colour.
 */
-Colour convertHexToRgb(std::string hex);
+//Colour convertHexToRgb(std::string hex);
 
 /*
 \fn:        isValidRgb()
@@ -97,14 +104,14 @@ Colour convertHexToRgb(std::string hex);
 \           b - The string that holds the value of blue.
 \return:    
 */
-is_valid_rgb_result_t isValidRgb(const std::string& r, const std::string& g, const std::string& b);
+//is_valid_rgb_result_t isValidRgb(const std::string& r, const std::string& g, const std::string& b);
 
 /*
 \fn:        convertRgbToHex()
-\brief:     Converts
+\brief:     Converts a RGB colour to it's equivalent hex value.
 \param:     colour - The RGB colour to be converted to hex.
-\return:    A string that represents the hex equivalent of the RGB passed into the parameters of the function.
+\return:    A string that represents the hex equivalent of the RGB colour.
 */
-std::string convertRgbToHex(Colour colour);
+//std::string convertRgbToHex(Colour colour);
 
 /* ---  END FUNCTION DECLARATIONS  --- */
