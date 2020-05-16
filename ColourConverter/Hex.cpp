@@ -14,11 +14,6 @@ Hex::Hex()
 
 Hex::Hex(std::string hex)
 {
-	if (!IsValidHex(hex))
-	{
-		throw std::exception("The hex is invalid.");
-	}
-
 	SetHex(hex);
 }
 
@@ -37,6 +32,11 @@ std::string Hex::GetHex()
 
 void Hex::SetHex(std::string hex)
 {
+	if (!IsValidHex(hex))
+	{
+		throw std::exception("The hex is invalid.");
+	}
+
 	this->hex = hex;
 }
 
