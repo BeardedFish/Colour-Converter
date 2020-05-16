@@ -30,8 +30,6 @@ int main(int argc, char* argv[])
 		return EXIT_FAILURE;
 	}
 
-	std::cout << "Colour Converter - By: " << PROGRAM_CREATOR << std::endl << std::endl;
-
 	if (argc == 2)
 	{
 		std::string secondArgument = argv[1];
@@ -40,7 +38,7 @@ int main(int argc, char* argv[])
 		{
 			secondArgument = secondArgument.substr(2, secondArgument.length() - 1);
 
-			handleCommand(secondArgument);
+			handleCommand(secondArgument, (argc == 0) ? "ColourConverter" : argv[0]);
 		}
 		else // Convert hex to RGB
 		{
@@ -48,8 +46,8 @@ int main(int argc, char* argv[])
 
 			try
 			{
-
 				Colour rgbResult = Hex(secondArgument).ToRgb();
+
 				std::cout << "The hex value #" << secondArgument << " equivalent RGB value is: " << rgbResult.Red << " " << rgbResult.Green << " " << rgbResult.Blue << "." << std::endl;
 			}
 			catch (const std::exception& ex)

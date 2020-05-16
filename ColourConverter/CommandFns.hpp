@@ -11,6 +11,7 @@
 
 constexpr char PROGRAM_CREATOR[] = "Darian Benam";
 constexpr char PROGRAM_VERSION[] = "1.0";
+constexpr size_t COMMAND_STR_WIDTH = 15;
 
 /*
  * Function Name:     printUsageText()
@@ -36,12 +37,24 @@ void printUsageText(std::ostream& stream, const std::string& fileName);
 bool isCommand(const std::string& cmd);
 
 /*
+ * Function Name:     lowercaseStr()
+ *
+ * Brief:             Converts a string to lowercase.
+ *
+ * Parameters:        str - The string to be converted to lowercase.
+ *
+ * Return:            A string that was converted to lowercase.
+ */
+std::string lowercaseStr(std::string str);
+
+/*
  * Function Name:     handleCommand()
  *
  * Brief:             Handles specific commands by executing code for what that command should do (ex: --help prints text on how to use the program).
  *
  * Parameters:        cmd - The string that holds a command to be evaluated.
+ *                    fileName - The name of the Colour Converter file currently being executed.
  *
  * Return:            Nothing.
  */
-void handleCommand(const std::string& cmd);
+void handleCommand(const std::string& cmd, const std::string& fileName);
