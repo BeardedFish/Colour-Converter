@@ -1,9 +1,9 @@
 /*
-\file:     Colour.cpp
-\author:   Darian Benam
-\date:     Saturday, May 9, 2020
-\brief:    Equivalent C++ file for the header file 'Colour.hpp'.
-*/
+ * File Name:     Colour.cpp
+ * Purpose:       Refer to Colour.hpp for purpose.
+ * Coder:         Darian Benam (GitHub: https://github.com/BeardedFish/)
+ * Date:          Saturday, May 9, 2020
+ */
 
 #include "Colour.hpp"
 #include <assert.h>

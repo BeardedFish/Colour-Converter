@@ -1,3 +1,10 @@
+/*
+ * File Name:     Hex.cpp
+ * Purpose:       Refer to Hex.hpp for purpose.
+ * Coder:         Darian Benam (GitHub: https://github.com/BeardedFish/)
+ * Date:          Saturday, May 9, 2020
+ */
+
 #include "Hex.hpp"
 
 Hex::Hex()

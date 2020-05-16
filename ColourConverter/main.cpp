@@ -1,23 +1,24 @@
 /*
-\file:     main.cpp
-\author:   Darian Benam
-\date:     Saturday, May 9, 2020
-\version:  1.0
-\brief:    This program takes in a hex string and converts it to its RGB equivalent. This program also converts a RGB
-\          combo to its hex string equivalent.
-*/
+ * File Name:     main.cpp
+ * Purpose:       The C++ source file that contains the main entry point of the colour converter program.
+ * Coder:         Darian Benam (GitHub: https://github.com/BeardedFish/)
+ * Date:          Saturday, May 9, 2020
+ */
 
 #include "CommandFns.hpp"
 #include "Hex.hpp" // NOTE: Colour.hpp is also included with Hex.hpp
 #include <iostream>
 
 /*
-\fn:        main()
-\brief:     The main entry point of the program.
-\param:     argc - Argument count, the amount of arguments available that were passed into the program on execution.
-\           argv - Argument vector, a pointer to a char array that contains the actual arguments passed into the program.
-\return:    An int representing the exit code of the program.
-*/
+ * Function Name:     main()
+ *
+ * Brief:             The main entry point of the program.
+ *
+ * Parameters:        argc - Argument count, the amount of arguments available that were passed into the program on execution.
+ *                    argv - Argument vector, a pointer to a char array that contains the actual arguments passed into the program.
+ *
+ * Return:            An int representing the exit code of the program.
+ */
 int main(int argc, char* argv[])
 {
 	if (argc <= 1)

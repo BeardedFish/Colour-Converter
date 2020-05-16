@@ -1,11 +1,11 @@
 /*
-\file:     programfns.cpp
-\author:   Darian Benam
-\date:     Saturday, May 9, 2020
-\brief:
-*/
+ * File Name:     CommandFns.hpp
+ * Purpose:       Refer to CommandFns.hpp for purpose.
+ * Coder:         Darian Benam (GitHub: https://github.com/BeardedFish/)
+ * Date:          Saturday, May 9, 2020
+ */
 
-#include "programfns.hpp"
+#include "CommandFns.hpp"
 #include <iostream>
 
 void printUsageText(std::ostream& stream, const std::string& fileName)
