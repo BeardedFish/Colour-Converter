@@ -5,7 +5,7 @@
  * Date:          Saturday, May 9, 2020
  */
 
-#include "Hex.hpp"
+#include "../includes/Hex.hpp"
 
 Hex::Hex()
 {

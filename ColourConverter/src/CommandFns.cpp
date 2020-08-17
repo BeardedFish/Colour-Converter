@@ -5,7 +5,7 @@
  * Date:          Saturday, May 9, 2020
  */
 
-#include "CommandFns.hpp"
+#include "../includes/CommandFns.hpp"
 #include <iomanip>
 #include <iostream>
 #include <sstream>

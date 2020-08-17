@@ -5,8 +5,8 @@
  * Date:          Saturday, May 9, 2020
  */
 
-#include "CommandFns.hpp"
-#include "Hex.hpp" // NOTE: Colour.hpp is also included with Hex.hpp
+#include "../includes/CommandFns.hpp"
+#include "../includes/Hex.hpp" // NOTE: Colour.hpp is also included with Hex.hpp
 #include <iostream>
 
 /*

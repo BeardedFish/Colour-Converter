@@ -15,27 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\Colour.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Colour.cpp">
+    <ClCompile Include="src\CommandFns.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Hex.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CommandFns.cpp">
+    <ClCompile Include="src\Hex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Colour.hpp">
+    <ClInclude Include="includes\Hex.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Hex.hpp">
+    <ClInclude Include="includes\Colour.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CommandFns.hpp">
+    <ClInclude Include="includes\CommandFns.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

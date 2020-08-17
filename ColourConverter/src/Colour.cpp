@@ -5,7 +5,7 @@
  * Date:          Saturday, May 9, 2020
  */
 
-#include "Colour.hpp"
+#include "../includes/Colour.hpp"
 #include <assert.h>
 
 Colour::Colour()

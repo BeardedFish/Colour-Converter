@@ -123,15 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Colour.cpp" />
-    <ClCompile Include="Hex.cpp" />
-    <ClCompile Include="CommandFns.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\Colour.cpp" />
+    <ClCompile Include="src\Hex.cpp" />
+    <ClCompile Include="src\CommandFns.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Colour.hpp" />
-    <ClInclude Include="Hex.hpp" />
-    <ClInclude Include="CommandFns.hpp" />
+    <ClInclude Include="includes\Colour.hpp" />
+    <ClInclude Include="includes\Hex.hpp" />
+    <ClInclude Include="includes\CommandFns.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
