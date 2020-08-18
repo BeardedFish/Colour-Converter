@@ -1,5 +1,5 @@
 /*
- * File Name:     main.cpp
+ * File Name:     Main.cpp
  * Purpose:       The C++ source file that contains the main entry point of the colour converter program.
  * Coder:         Darian Benam (GitHub: https://github.com/BeardedFish/)
  * Date:          Saturday, May 9, 2020
