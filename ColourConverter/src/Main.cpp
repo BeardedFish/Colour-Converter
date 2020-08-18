@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
 			{
 				Colour rgbResult = Hex(secondArgument).ToRgb();
 
-				std::cout << "The hex value #" << secondArgument << " equivalent RGB value is: " << rgbResult.Red << " " << rgbResult.Green << " " << rgbResult.Blue << "." << std::endl;
+				std::cout << "The hex value #" << secondArgument << " equivalent RGB value is: " << rgbResult.Red << " " << rgbResult.Green << " " << rgbResult.Blue << std::endl;
 			}
 			catch (const std::exception& ex)
 			{
@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
 		{
 			Colour rgb(red, green, blue);
 
-			std::cout << "The RGB(" << red << ", " << green << ", " << blue << ")" << " hex value is #" << rgb.ToHex() << std::endl;
+			std::cout << "The RGB(" << red << ", " << green << ", " << blue << ")" << " hex value is: #" << rgb.ToHex() << std::endl;
 		}
 		catch (const std::exception& ex)
 		{
