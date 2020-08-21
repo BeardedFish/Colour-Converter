@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
 		{
 			Colour rgb(red, green, blue);
 
-			std::cout << "The RGB(" << red << ", " << green << ", " << blue << ")" << " hex value is: #" << rgb.ToHex() << std::endl;
+			std::cout << "The RGB(" << red << ", " << green << ", " << blue << ")" << " equivalent hex value is: #" << rgb.ToHex() << std::endl;
 		}
 		catch (const std::exception& ex)
 		{
